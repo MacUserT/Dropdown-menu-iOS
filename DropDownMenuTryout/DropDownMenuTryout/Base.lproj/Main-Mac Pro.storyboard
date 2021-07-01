@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownMenuTryout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BuZ-pW-Gvc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hs3-4K-pqO">
+                                <rect key="frame" x="17.5" y="89" width="379" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" identifier="TableViewHeight" id="9r1-nY-90k"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sport Activity" rowHeight="80" id="2Uo-Nr-bct" customClass="SportActivityCell" customModule="DropDownMenuTryout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="379" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Uo-Nr-bct" id="5eg-jY-kg8">
+                                            <rect key="frame" x="0.0" y="0.0" width="379" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RunnerIconGreenbg" translatesAutoresizingMaskIntoConstraints="NO" id="NZ0-CX-ANR">
+                                                    <rect key="frame" x="20" y="16" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="BzS-Zx-9MT"/>
+                                                        <constraint firstAttribute="width" constant="48" id="buq-tG-rFu"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRaduis">
+                                                            <integer key="value" value="24"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG0-o4-Dl5">
+                                                    <rect key="frame" x="76" y="41" width="57" height="31"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChevronDown" translatesAutoresizingMaskIntoConstraints="NO" id="Ohz-fS-AOy">
+                                                    <rect key="frame" x="327" y="24" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="Gq5-VV-9xc"/>
+                                                        <constraint firstAttribute="height" constant="32" id="pFk-pm-W6Y"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPORT ACTIVITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bt-4b-8U5">
+                                                    <rect key="frame" x="76" y="8" width="96" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6bt-4b-8U5" firstAttribute="top" secondItem="5eg-jY-kg8" secondAttribute="top" constant="8" id="OKv-53-rCe"/>
+                                                <constraint firstAttribute="bottom" secondItem="HG0-o4-Dl5" secondAttribute="bottom" constant="8" id="PHV-j9-mAF"/>
+                                                <constraint firstItem="6bt-4b-8U5" firstAttribute="leading" secondItem="NZ0-CX-ANR" secondAttribute="trailing" constant="8" symbolic="YES" id="cPs-oC-xaK"/>
+                                                <constraint firstItem="Ohz-fS-AOy" firstAttribute="centerY" secondItem="5eg-jY-kg8" secondAttribute="centerY" id="hRJ-3S-QBC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ohz-fS-AOy" secondAttribute="trailing" constant="20" symbolic="YES" id="hs9-nS-tB6"/>
+                                                <constraint firstItem="NZ0-CX-ANR" firstAttribute="centerY" secondItem="5eg-jY-kg8" secondAttribute="centerY" id="lyW-bg-zeN"/>
+                                                <constraint firstItem="NZ0-CX-ANR" firstAttribute="leading" secondItem="5eg-jY-kg8" secondAttribute="leading" constant="20" symbolic="YES" id="owz-Ab-Pqw"/>
+                                                <constraint firstItem="Ohz-fS-AOy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6bt-4b-8U5" secondAttribute="trailing" constant="8" symbolic="YES" id="p8w-TG-kII"/>
+                                                <constraint firstItem="HG0-o4-Dl5" firstAttribute="leading" secondItem="NZ0-CX-ANR" secondAttribute="trailing" constant="8" symbolic="YES" id="wBt-ga-wC9"/>
+                                                <constraint firstItem="Ohz-fS-AOy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HG0-o4-Dl5" secondAttribute="trailing" constant="8" symbolic="YES" id="y8h-X0-jb2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sportIcon" destination="NZ0-CX-ANR" id="iYc-rO-mM8"/>
+                                            <outlet property="sportLabel" destination="HG0-o4-Dl5" id="mS6-ef-fbD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sport Selection" rowHeight="80" id="wKx-mF-p6l" customClass="SportSelectionCell" customModule="DropDownMenuTryout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="379" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wKx-mF-p6l" id="MLu-Jl-QmD">
+                                            <rect key="frame" x="0.0" y="0.0" width="379" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BikingIconPurplebg" translatesAutoresizingMaskIntoConstraints="NO" id="X7c-iA-LfH">
+                                                    <rect key="frame" x="20" y="16" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="Iw2-Qf-Plm"/>
+                                                        <constraint firstAttribute="width" constant="48" id="wsP-C4-NUG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gd8-8q-eal">
+                                                    <rect key="frame" x="327" y="24" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="f6L-wG-Wj2"/>
+                                                        <constraint firstAttribute="height" constant="32" id="m7w-ey-V0b"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR5-8l-ITc">
+                                                    <rect key="frame" x="76" y="24.5" width="57" height="31"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gd8-8q-eal" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PR5-8l-ITc" secondAttribute="trailing" constant="8" symbolic="YES" id="9AP-P0-I3P"/>
+                                                <constraint firstItem="PR5-8l-ITc" firstAttribute="centerY" secondItem="X7c-iA-LfH" secondAttribute="centerY" id="9eO-tR-K9F"/>
+                                                <constraint firstItem="X7c-iA-LfH" firstAttribute="leading" secondItem="MLu-Jl-QmD" secondAttribute="leading" constant="20" id="Ata-Wu-9BS"/>
+                                                <constraint firstItem="X7c-iA-LfH" firstAttribute="centerY" secondItem="MLu-Jl-QmD" secondAttribute="centerY" id="Db6-JI-uV3"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gd8-8q-eal" secondAttribute="trailing" constant="20" id="FLr-4Z-Gpm"/>
+                                                <constraint firstItem="Gd8-8q-eal" firstAttribute="centerY" secondItem="MLu-Jl-QmD" secondAttribute="centerY" id="IqW-Ne-dIE"/>
+                                                <constraint firstItem="PR5-8l-ITc" firstAttribute="leading" secondItem="X7c-iA-LfH" secondAttribute="trailing" constant="8" symbolic="YES" id="xgp-7n-LGe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="settingsIcon" destination="Gd8-8q-eal" id="XnR-PX-bnD"/>
+                                            <outlet property="sportSelectionIcon" destination="X7c-iA-LfH" id="aiO-ut-IHW"/>
+                                            <outlet property="sportSelectionLabel" destination="PR5-8l-ITc" id="Vo8-fR-7W4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BuZ-pW-Gvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3O1-Cd-O2z"/>
+                            <constraint firstItem="BuZ-pW-Gvc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5EB-Xf-aA6"/>
+                            <constraint firstItem="hs3-4K-pqO" firstAttribute="width" secondItem="BuZ-pW-Gvc" secondAttribute="width" multiplier="0.914667" id="Eed-BC-dcU"/>
+                            <constraint firstItem="hs3-4K-pqO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="FzI-vf-Az8"/>
+                            <constraint firstItem="hs3-4K-pqO" firstAttribute="centerX" secondItem="BuZ-pW-Gvc" secondAttribute="centerX" id="TEn-CQ-UuW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BuZ-pW-Gvc" secondAttribute="trailing" id="aXJ-yQ-kCq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BuZ-pW-Gvc" secondAttribute="bottom" id="i1A-dY-sfL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sportsSelectionTable" destination="hs3-4K-pqO" id="Wez-sr-yXd"/>
+                        <outlet property="startMap" destination="BuZ-pW-Gvc" id="PQK-gF-L2p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BikingIconPurplebg" width="48" height="48"/>
+        <image name="ChevronDown" width="10" height="6"/>
+        <image name="RunnerIconGreenbg" width="48" height="48"/>
+        <image name="SettingsIcon" width="32" height="32"/>
+    </resources>
+</document>
